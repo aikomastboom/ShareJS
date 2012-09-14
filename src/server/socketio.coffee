@@ -19,7 +19,12 @@ i = ->#util.inspect
 #
 # Options = {}
 exports.attach = (server, createClient, options) ->
-  io = socketio.listen server
+  if options.io
+    console.log("attach io") if options.debug
+    io = options.io
+    delete options.io
+  else
+    io = socketio.listen server
 
   io.configure ->
     io.set 'log level', 1
