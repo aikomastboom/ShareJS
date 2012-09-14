@@ -32,25 +32,30 @@ create.createModel = createModel = (options) ->
 # Set options.rest == null or options.socketio == null to turn off that frontend.
 create.attach = attach = (server, options, model = createModel(options)) ->
   options ?= {}
-  options.staticpath ?= '/share'
+  options.staticpath = '/share' if typeof options.staticpath == 'undefined'
 
   server.model = model
   server.on 'close', -> model.closeDb()
 
+  console.log('options.staticpath', options.staticpath) if options.debug
   server.use options.staticpath, connect.static("#{__dirname}/../../webclient") if options.staticpath != null
 
   createAgent = require('./useragent') model, options
 
   # The client frontend doesn't get access to the model at all, to make sure security stuff is
   # done properly.
+  console.log('options.rest', options.rest) if options.debug
   server.use rest(createAgent, options.rest) if options.rest != null
 
   # Socketio frontend is now disabled by default.
+  console.log('options.socketio',options.socketio) if options.debug
   socketio.attach(server, createAgent, options.socketio or {}) if options.socketio?
 
   # SockJS frontend is disabled by default
+  console.log('options.sockjs', options.sockjs) if options.debug
   sockjs.attach(server, createAgent, options.sockjs or {}) if options.sockjs?
 
+  console.log('options.browserChannel', options.browserChannel) if options.debug
   browserChannel.attach(server, createAgent, options.browserChannel or {}) if options.browserChannel != null
 
 
