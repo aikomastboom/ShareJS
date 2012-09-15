@@ -1,0 +1,49 @@
+digraph sharejs {
+	share_js;
+	browser [shape=circle];
+	ws;
+	http;
+
+	sockjs;
+	browserchannel;
+	rest;
+	socketio;
+
+	transport [shape=diamond];
+	session;
+	useragent;
+	model;
+	db [shape=diamond];
+
+	amazon;
+	couchdb;
+	mongo;
+	pg;
+	redis;
+
+	share_js->browser;
+	browser->ws;
+	browser->http;
+
+	ws->sockjs;
+	ws->socketio;
+	http->browserchannel;
+	http->rest;
+
+	sockjs->transport;
+	browserchannel->transport;
+	rest->transport;
+	socketio->transport;
+
+	transport->session;
+	session->useragent
+	useragent->model;
+	model->db;
+
+	db->amazon;
+	db->couchdb;
+	db->mongo;
+	db->pg;
+	db->redis;
+
+}
