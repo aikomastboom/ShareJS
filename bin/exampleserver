@@ -55,7 +55,18 @@ var server = connect(
 );
 
 var options = {
-	db: {type: 'none'},
+	db: {
+		type: 'rest',
+		port: 9000,
+		host: 'localhost',
+		prefix: '/doc/',
+		backend: {
+			type: 'none',
+			hostname: 'zwetnilla'
+		}
+	},
+	debug: true,
+	rest: {},
 	socketio: {},
 	sockjs: {},
 	browserChannel: {cors: '*'},
@@ -76,9 +87,15 @@ try {
 } catch (e) {}
 
 console.log("ShareJS example server v" + sharejs.version);
-console.log("Options: ", options);
 
 var port = argv.p;
+if (port == 9000) {
+  options.db = {
+	  type: 'mongo',
+	  hostname: 'zwetnilla'
+  }
+}
+console.log("Options: ", options);
 
 // Attach the sharejs REST and Socket.io interfaces to the server
 sharejs.server.attach(server, options);
