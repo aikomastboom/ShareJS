@@ -98,6 +98,7 @@ module.exports = Model = (db, options) ->
   # Its important that all ops are applied in order. This helper method creates the op submission queue
   # for a single document. This contains the logic for transforming & applying ops.
   makeOpQueue = (docName, doc) -> queue (opData, callback) ->
+    console.log('model.makeOpQueue',docName,doc,opData)
     return callback 'Version missing' unless opData.v >= 0
     return callback 'Op at future version' if opData.v > doc.v
 
@@ -250,6 +251,7 @@ module.exports = Model = (db, options) ->
   #
   # The callback is called with (error, doc)
   load = (docName, callback) ->
+    console.log('model.load',docName)
     if docs[docName]
       # The document is already loaded. Return immediately.
       options.stats?.cacheHit? 'getSnapshot'
@@ -259,6 +261,7 @@ module.exports = Model = (db, options) ->
     return callback 'Document does not exist' unless db
 
     callbacks = awaitingGetSnapshot[docName]
+    console.log('model.load.callbacks', callbacks)
 
     # The document is being loaded already. Add ourselves as a callback.
     return callbacks.push callback if callbacks
@@ -268,6 +271,7 @@ module.exports = Model = (db, options) ->
     # The document isn't loaded and isn't being loaded. Load it.
     awaitingGetSnapshot[docName] = [callback]
     db.getSnapshot docName, (error, data, dbMeta) ->
+      console.log('model.load.db.getSnapshot', docName, error, data, dbMeta)
       return add docName, error if error
 
       type = types[data.type]
@@ -331,6 +335,7 @@ module.exports = Model = (db, options) ->
           , options.reapTime
 
   tryWriteSnapshot = (docName, callback) ->
+    console.log('model.tryWriteSnapshot', docName)
     return callback?() unless db
 
     doc = docs[docName]
@@ -357,6 +362,7 @@ module.exports = Model = (db, options) ->
       type: doc.type.name
 
     # Commit snapshot.
+    console.log('model.commit snapshot',docName, data)
     writeSnapshot docName, data, doc.dbMeta, (error, dbMeta) ->
       doc.snapshotWriteLock = false
 
@@ -476,6 +482,7 @@ module.exports = Model = (db, options) ->
   # getSnapshot(docName, callback)
   # Callback is called with (error, {v: <version>, type: <type>, snapshot: <snapshot>, meta: <meta>})
   @getSnapshot = (docName, callback) ->
+    console.log('model.getSnapshot',docName)
     load docName, (error, doc) ->
       callback error, if doc then {v:doc.v, type:doc.type, snapshot:doc.snapshot, meta:doc.meta}
 

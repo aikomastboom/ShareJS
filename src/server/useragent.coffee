@@ -71,7 +71,9 @@ module.exports = (model, options) ->
         model.getOps docName, start, end, callback
 
     getSnapshot: (docName, callback) ->
+      console.log('useragent.getSnapshot',docName)
       @doAuth {docName}, 'get snapshot', callback, ->
+        console.log('useragent.doAuth', docName)
         model.getSnapshot docName, callback
     
     create: (docName, type, meta, callback) ->

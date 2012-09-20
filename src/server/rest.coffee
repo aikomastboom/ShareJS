@@ -27,7 +27,7 @@ sendError = (res, message, head = false) ->
     else
       send404 res
   else
-    console.warn "REST server does not know how to send error: '#{message}'"
+    console.warn "REST server does not know how to send error 500: '#{message}'"
     if head
       res.writeHead 500, {'Content-Type': 'text/plain'}
       res.end "Error: #{message}\n"
@@ -37,6 +37,7 @@ sendError = (res, message, head = false) ->
 
 send400 = (res, message) ->
   res.writeHead 400, {'Content-Type': 'text/plain'}
+  console.warn( "400 ", message)
   res.end message
 
 send200 = (res, message = "OK\n") ->
@@ -82,7 +83,9 @@ router = (app, createClient, options) ->
   # GET returns the document snapshot. The version and type are sent as headers.
   # I'm not sure what to do with document metadata - it is inaccessable for now.
   app.get '/doc/:name', auth, (req, res) ->
+    console.log('GET -- /doc/:name',req.params)
     req._client.getSnapshot req.params.name, (error, doc) ->
+      console.log('req._client.getSnapshot',error,doc)
       if doc  
         res.setHeader 'X-OT-Type', doc.type.name
         res.setHeader 'X-OT-Version', doc.v
@@ -101,6 +104,7 @@ router = (app, createClient, options) ->
           
   # Put is used to create a document. The contents are a JSON object with {type:TYPENAME, meta:{...}}
   app.put '/doc/:name', auth, (req, res) ->
+    console.log('PUT -- /doc/:name', req.params)
     expectJSONObject req, res, (obj) ->
       type = obj?.type
       meta = obj?.meta
@@ -116,6 +120,7 @@ router = (app, createClient, options) ->
 
   # POST submits an op to the document.
   app.post '/doc/:name', auth, (req, res) ->
+    console.log('POST -- /doc/:name', req.params)
     query = url.parse(req.url, true).query
 
     version = if query?.v?
@@ -132,9 +137,11 @@ router = (app, createClient, options) ->
           if error?
             sendError res, error
           else
+            console.log('POST -- newVersion',newVersion)
             sendJSON res, {v:newVersion}
 
   app.delete '/doc/:name', auth, (req, res) ->
+    console.log('DELETE -- /doc/:name', req.params)
     req._client.delete req.params.name, (error) ->
       if error
         sendError res, error
