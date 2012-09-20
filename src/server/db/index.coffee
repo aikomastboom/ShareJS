@@ -26,5 +26,6 @@ module.exports = (options) ->
       when 'pg' then require './pg'
       when 'amazon' then require './amazon'
       when 'mongo' then require './mongo'
+      when 'rest' then require './rest'
       else throw new Error "Invalid or unsupported database type: '#{type}'"
     new Db options
