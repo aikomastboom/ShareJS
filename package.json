@@ -20,6 +20,7 @@
     "request": ">= 2.1.1",
     "coffee-script": "*",
     "browserchannel": "*",
+    "mongodb": "*",
     "hat": "*"
   },
   "devDependencies": {
