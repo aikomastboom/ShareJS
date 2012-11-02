@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="10626d67-7635-4da0-bf69-1eb38112093d" name="Default" comment="" />
+    <ignored path="ShareJS.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.43510324">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="session.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/session.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="208" column="20" selection-start="7518" selection-end="7524" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sharejs.dot" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/doc/sharejs.dot">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="20" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="rest.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/db/rest.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="63" column="57" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="rest.coffee" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/server/rest.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="39" selection-start="267" selection-end="268" vertical-scroll-proportion="0.023781212">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/db/index.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="10" selection-start="1043" selection-end="1045" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="mongo.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/db/mongo.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="10" selection-start="475" selection-end="483" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/index.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="47" column="29" selection-start="1703" selection-end="1714" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sockjs.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/sockjs.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="45" selection-start="119" selection-end="126" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="exampleserver" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/bin/exampleserver">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="63" column="23" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="sharejs.dot" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/doc/sharejs.dot">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="useragent.coffee" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/server/useragent.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="57" column="31" selection-start="2292" selection-end="2301" vertical-scroll-proportion="0.023174971">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="sharesync.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/../sipes/modules/api/src/sharesync.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="0" selection-start="687" selection-end="724" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="http.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Library/Caches/WebIde50/extLibs/nodejs-v0.6.20-src/core-modules-sources/lib/http.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="515" column="27" selection-start="14237" selection-end="14238" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="redis.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/db/redis.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="120" column="26" selection-start="4113" selection-end="4121" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="model.coffee" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/server/model.coffee">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="100" column="23" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/examples/clobber-ace.html" />
+        <option value="$PROJECT_DIR$/examples/code.html" />
+        <option value="$PROJECT_DIR$/examples/hello-ace.html" />
+        <option value="$PROJECT_DIR$/examples/hello-readonly.html" />
+        <option value="$PROJECT_DIR$/examples/hello-tp2.html" />
+        <option value="$PROJECT_DIR$/examples/hex.html" />
+        <option value="$PROJECT_DIR$/examples/shout.html" />
+        <option value="$PROJECT_DIR$/doc/sharejs.dot" />
+        <option value="$PROJECT_DIR$/src/server/db/mongo-rest.js" />
+        <option value="$PROJECT_DIR$/src/server/db/mongo-rest.coffee" />
+        <option value="$PROJECT_DIR$/src/server/db/index.coffee" />
+        <option value="$PROJECT_DIR$/src/server/useragent.coffee" />
+        <option value="$PROJECT_DIR$/bin/exampleserver" />
+        <option value="$PROJECT_DIR$/src/server/rest.coffee" />
+        <option value="$PROJECT_DIR$/src/server/model.coffee" />
+        <option value="$PROJECT_DIR$/src/server/db/rest.coffee" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1680" />
+    <option name="height" value="1024" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sipes/modules/api/src/sharesync.js" />
+    <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PublishConfig" serverName="ShareJS In Place" serverId="fe384b64-159b-4b7b-a4b6-1f55f5b78d1b">
+    <servers>
+      <server id="3d252076-83d0-4c80-8bec-e65b9355bd95">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+      <server id="f169f3c4-6266-4fb6-adde-896bc60b35df">
+        <serverdata />
+      </server>
+      <server id="fe384b64-159b-4b7b-a4b6-1f55f5b78d1b">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/examples" web="/" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$" coffeescript-run="false">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10626d67-7635-4da0-bf69-1eb38112093d" name="Default" comment="" />
+      <created>1347529582818</created>
+      <updated>1347529582818</updated>
+    </task>
+    <task id="LOCAL-00001" summary="allow injection of existing io">
+      <created>1347621815983</created>
+      <updated>1347621815983</updated>
+    </task>
+    <task id="LOCAL-00002" summary="allow staticpath=null to have meaning">
+      <created>1347621867733</created>
+      <updated>1347621867733</updated>
+    </task>
+    <task id="LOCAL-00003" summary="examples using sockjs">
+      <created>1347621897149</created>
+      <updated>1347621897149</updated>
+    </task>
+    <task id="LOCAL-00004" summary="simple dot of architecture">
+      <created>1347698544615</created>
+      <updated>1347698544615</updated>
+    </task>
+    <task id="LOCAL-00005" summary="attempt at rest backend">
+      <created>1348165281950</created>
+      <updated>1348165281950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="debugging">
+      <created>1348165302285</created>
+      <updated>1348165302285</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added mongo for debugging">
+      <created>1348165315711</created>
+      <updated>1348165315711</updated>
+    </task>
+    <task id="LOCAL-00008" summary="attempt at rest backend">
+      <created>1348165337212</created>
+      <updated>1348165337212</updated>
+    </task>
+    <task id="LOCAL-00009" summary="logging to be removed">
+      <created>1348165355950</created>
+      <updated>1348165355950</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37416905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18165359" sideWeight="0.62583095" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="logging to be removed" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="allow injection of existing io" />
+    <MESSAGE value="allow staticpath=null to have meaning" />
+    <MESSAGE value="examples using sockjs" />
+    <MESSAGE value="simple dot of architecture" />
+    <MESSAGE value="debugging" />
+    <MESSAGE value="added mongo for debugging" />
+    <MESSAGE value="attempt at rest backend" />
+    <MESSAGE value="logging to be removed" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/examples/readonly/markdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/readonly/html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="583" selection-end="583" vertical-scroll-proportion="0.5337423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/rest.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="57" selection-start="1694" selection-end="1694" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="10" selection-start="1043" selection-end="1045" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/mongo.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="10" selection-start="475" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/index.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="29" selection-start="1703" selection-end="1714" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/sockjs.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="45" selection-start="119" selection-end="126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/session.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="20" selection-start="7518" selection-end="7524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/rest.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="39" selection-start="267" selection-end="268" vertical-scroll-proportion="0.023781212">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/exampleserver">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="23" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/sharejs.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sipes/modules/api/src/sharesync.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="687" selection-end="724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/WebIde50/extLibs/nodejs-v0.6.20-src/core-modules-sources/lib/http.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="515" column="27" selection-start="14237" selection-end="14238" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/db/redis.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="26" selection-start="4113" selection-end="4121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/model.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="23" selection-start="3693" selection-end="3693" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server/useragent.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="31" selection-start="2292" selection-end="2301" vertical-scroll-proportion="0.023174971">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
