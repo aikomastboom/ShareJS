@@ -1,6 +1,7 @@
 # The server module...
 
 connect = require 'connect'
+http = require 'http'
 
 Model = require './model'
 createDb = require './db'
@@ -9,6 +10,7 @@ rest = require './rest'
 socketio = require './socketio'
 browserChannel = require './browserchannel'
 sockjs = require './sockjs'
+websocket = require './websocket'
 
 # Create an HTTP server and attach whatever frontends are specified in the options.
 #
@@ -24,7 +26,7 @@ create.createModel = createModel = (options) ->
   new Model db, options
 
 # Attach the OT server frontends to the provided Node HTTP server. Use this if you
-# already have a http.Server or https.Server and want to make some URL paths do OT.
+# already have a `connect` compatible server and want to make some URL paths do OT.
 #
 # The options object specifies options for everything. If settings are missing,
 # defaults will be provided.
@@ -51,13 +53,20 @@ create.attach = attach = (server, options, model = createModel(options)) ->
   console.log('options.socketio',options.socketio) if options.debug
   socketio.attach(server, createAgent, options.socketio or {}) if options.socketio?
 
+  console.log('options.browserChannel', options.browserChannel) if options.debug
+  browserChannel.attach(server, createAgent, options.browserChannel or {}) if options.browserChannel != null
+
+  if !(server instanceof http.Server)
+    server = http.createServer server
+
+  # this is required by sockjs since it only works with http server, not with
+  # `connect` server
   # SockJS frontend is disabled by default
   console.log('options.sockjs', options.sockjs) if options.debug
   sockjs.attach(server, createAgent, options.sockjs or {}) if options.sockjs?
 
-  console.log('options.browserChannel', options.browserChannel) if options.debug
-  browserChannel.attach(server, createAgent, options.browserChannel or {}) if options.browserChannel != null
-
+  # WebSocket frontend is disabled by default
+  websocket.attach(server, createAgent, options.websocket or {}) if options.websocket?
 
   server
 

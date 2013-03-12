@@ -1,8 +1,7 @@
-# This is an implementation of the OT data backend for redis.
-#   http://redis.io/
+# This is an implementation of the OT data backend for rest.
 #
 # This implementation isn't written to support multiple frontends
-# talking to a single redis backend using redis's transactions.
+
 http = require 'http'
 
 backend = null

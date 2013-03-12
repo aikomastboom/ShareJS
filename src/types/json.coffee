@@ -1,6 +1,8 @@
 # This is the implementation of the JSON OT type.
 #
 # Spec is here: https://github.com/josephg/ShareJS/wiki/JSON-Operations
+#
+# Note: This is obsolete, and will be replaced by the JSON2 type.
 
 if WEB?
   text = exports.types.text
@@ -222,8 +224,10 @@ json.transformComponent = (dest, c, otherC, type) ->
     json.append dest, c
     return dest
 
+  # if c is deleting something, and that thing is changed by otherC, we need to
+  # update c to reflect that change for invertibility.
+  # TODO this is probably not needed since we don't have invertibility
   if common2? && otherCplength > cplength && c.p[common2] == otherC.p[common2]
-    # transform based on c
     if c.ld != undefined
       oc = clone otherC
       oc.p = oc.p[cplength..]
@@ -232,7 +236,6 @@ json.transformComponent = (dest, c, otherC, type) ->
       oc = clone otherC
       oc.p = oc.p[cplength..]
       c.od = json.apply clone(c.od), [oc]
-
 
   if common?
     commonOperand = cplength == otherCplength
@@ -247,7 +250,7 @@ json.transformComponent = (dest, c, otherC, type) ->
         # Convert an op component to a text op component
         convert = (component) ->
           newC = p:component.p[component.p.length - 1]
-          if component.si
+          if component.si?
             newC.i = component.si
           else
             newC.d = component.sd
